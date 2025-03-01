@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Archive
+{% endblock %}
+
+{% block main %}
+<h2 style="text-align: center; color: #FFF;">Add New Project</h2>
+
+<form method="POST" style="display: flex; flex-direction: column; max-width: 400px; margin: auto;">
+    <label for="title" style="font-weight: bold; margin: 10px 0 5px;">Title</label>
+    <input type="text" id="title" name="title" required 
+           style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; 
+                  border-radius: 5px; font-size: 16px;">
+
+    <label for="desc" style="font-weight: bold; margin: 10px 0 5px;">Description</label>
+    <textarea id="desc" name="desc" rows="4" required 
+              style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; 
+                     border-radius: 5px; font-size: 16px; resize: vertical;"></textarea>
+
+    <label for="link" style="font-weight: bold; margin: 10px 0 5px;">Report Link</label>
+    <input type="url" id="link" name="link" required 
+           style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; 
+                  border-radius: 5px; font-size: 16px;">
+
+    <button type="submit" 
+            style="background: #007BFF; color: white; padding: 10px; border: none; 
+                   border-radius: 5px; cursor: pointer; font-size: 16px;">
+        Submit Report
+    </button>
+</form>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Search
+{% endblock %}
+
+{% block main %}
+<h1 style="color:white; margin-top: 50px; margin-left: 50px;">Search Results for "{{ search_query }}"</h1>
+
+{% if reports or projects %}
+    {% for report in reports %}
+    <br>
+    <div class="report-block">
+        <h2>{{ loop.index }}.</h2>  <!-- Auto-incrementing number -->
+        <h2>{{ report.title }}</h2>
+        <p>{{ report.desc }}</p>
+        <a href="{{ report.link }}" download>
+            <button>Download</button>
+        </a>
+    </div>
+    {% endfor %}
+
+    {% for archive in projects %}
+    <br>
+    <div class="report-block">
+        <h2>{{ loop.index }}.</h2>  <!-- Auto-incrementing number -->
+        <h2>{{ archive.title }}</h2>
+        <p>{{ archive.desc }}</p>
+        <a href="{{ archive.link }}" download>
+            <button>Download</button>
+        </a>
+    </div>
+    {% endfor %}
+{% else %}
+    <p>No results found.</p>
+{% endif %}
+
+{% endblock %}

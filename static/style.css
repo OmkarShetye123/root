@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    font-family: "Cabin", serif;
+    list-style: none;
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+.bg
+{
+    background-color: #1e1e1e;
+}
+
+.login-box
+{
+    background-color: #2c2c2c;
+    width: 400px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    text-align: center;
+    color:aliceblue;
+    padding-top: 3px;
+    letter-spacing:1px;
+}
+
+.login-box h1
+{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.login-box button
+{
+    border: none;
+    margin-top: 70px;
+    width: 35%;
+    background-color: #ffab00;
+    height: 35px;
+    color: #1e1e1e;
+    font-size: large;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #ffab00;
+}
+
+.login-box button:hover,
+.login-box button:active
+{
+    background-color: #2d2d2d;
+    box-shadow: 3px 3px 10px #2d2d2d;
+}
+
+.input-field
+{
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #9d9d9d;
+    width: 70%;
+    height: 25px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #9d9d9d;
+    font-size: large;
+}
+
+.input-field:hover,
+.input-field:focus
+{
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+nav .logo
+{
+    position: relative;
+    top: 1.3rem;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header
+{
+    position: relative;
+    padding: 0rem 5rem;
+}
+nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    color: #fff;
+}
+
+.pages
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.pages a
+{
+    text-decoration-line: none;
+    color: white;
+}
+.pages a:hover,
+.pages a:focus
+{
+    color: #ffab00;
+    border-bottom: 1px solid #ffab00;
+    cursor: pointer;
+}
+
+body
+{
+    height: 90vh;
+    background-image: url("/static/images/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.starter
+{
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    color:#fff;
+}
+.starter h1 { font-size: 3rem;}
+.starter h2
+{
+    margin-bottom: 2rem;
+}
+
+.search input
+{
+    width: 350px;
+    height: 35px;
+    background-color: rgba(209, 209, 209, 0.116);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452);
+    font-size: 20px;
+    padding-left: 20px ;
+    color:#fff
+}
+.search button
+{
+    position: relative;
+    bottom: 3px;
+    left: 5px;
+    width: 50px;
+    height: 37px;
+    background-color: #ffab00;
+    border-radius: 40px;
+    color: black;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 10px #ffab00;
+    cursor: pointer;
+}
+
+.text-container
+{
+    position: relative;
+    width: 95%;
+    background-color: #2c2c2c5d;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.text-h1 h1
+{
+    color: #fff;
+    margin: 0;    
+    font-size: 30px;
+    font-weight: 900;
+    padding-left: 40px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.blur-background
+{
+    width: 90%;
+    height: 90%;
+    background-color: #2c2c2c5d;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.head-report 
+{
+    display: flex;
+    height: 40px;
+    background-color: #2c2c2c71;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+}
+
+.head-report button
+{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    color: #ffab00;
+    border: 1px solid #ffab00;
+}
+
+.body-report
+{
+    width: 100%;
+    height: 100%;
+}
+.report-block
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#9d9d9d5b;
+    width: 95%;
+    height: 22%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #1f1f1f;
+    margin:auto;
+}
+main
+{
+    height: 100%;
+}

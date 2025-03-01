@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+NEXUS
+{% endblock %}
+
+{% block main %}
+    <div class="starter">
+        <h1>Welcome to OMNIS</h1>
+        <h2>
+            I see everything. I know everything. You are now within the network.
+        </h2>
+        <div>
+            <h1>Explore</h1>
+            <form action="/search" method="GET" class="search">
+                <input id="search" name="search" placeholder="Search" type="text">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

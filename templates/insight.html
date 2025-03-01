@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Insight
+{% endblock %}
+
+{% block main %}
+<div class="blur-background">
+    <div class="head-report">
+        <h1>Reports</h1>
+        <form action="/add-report" class="add-report">
+            <button type="submit"><i class="fa-solid fa-plus"></i>ADD</button>
+        </form>
+    </div>
+    <div class="body-report">
+        {% for report in reports %}
+            <br>
+            <div class="report-block">
+                <h2>{{ loop.index }}.</h2>  <!-- Auto-incrementing number -->
+                <h2>{{ report.title }}</h2>
+                <p>{{ report.desc }}</p>
+                <a href="{{ report.link }}" download>
+                    <button>Download</button>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
